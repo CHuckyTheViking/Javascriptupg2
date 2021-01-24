@@ -34,7 +34,7 @@ const Activity = ({activity, activities, setActivity}) => {
         <div className="container col-3 justify-content-center p-1" id="activitiesDiv">
            <p className="ms-3 mt-2" id="activitiesHeader" >{activity.header}</p>
            
-           <textarea className="container" name="activitiesText" id="activitiesText" cols="36" rows="5" defaultValue={activity.description}></textarea>
+           <textarea disabled="true" className="container" name="activitiesText" id="activitiesText" cols="36" rows="5" defaultValue={activity.description}></textarea>
            <div id="selectedDiv" className="d-flex justify-content-center">
                 <select onChange={click} className="mb-3 mt-2" id={"select-" + activity.id}>
                     <option value="Ej påbörjad">Ej påbörjad</option>
